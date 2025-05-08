@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - ShopEasy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/src/styles.css">
+  <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">ShopEasy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Electronics</a></li>
+              <li><a class="dropdown-item" href="#">Clothing</a></li>
+              <li><a class="dropdown-item" href="#">Home & Kitchen</a></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="orders.html">My Orders</a>
+          </li>
+        </ul>
+        <form class="d-flex mx-auto col-lg-4">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="Search products...">
+            <button class="btn btn-outline-dark" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+        <div class="d-flex align-items-center">
+          <a href="cart.html" class="btn btn-outline-dark me-2 position-relative active">
+            <i class="bi bi-cart"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+          </a>
+          <a href="#" class="btn btn-outline-dark">
+            <i class="bi bi-person"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Shopping Cart Section -->
+  <section class="py-5">
+    <div class="container px-4 px-lg-5">
+      <h2 class="mb-4">Shopping Cart</h2>
+      
+      <div class="row">
+        <div class="col-lg-8">
+          <!-- Cart Items -->
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <!-- Cart Item 1 -->
+              <div class="row mb-4 border-bottom pb-4">
+                <div class="col-md-2">
+                  <img src="https://via.placeholder.com/100x100" alt="Product" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-black">Wireless Headphones</h5>
+                  <p class="text-muted small">Color: Black</p>
+                </div>
+                <div class="col-md-2 d-flex align-items-center">
+                  <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                  </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center">
+                  <h5 class="mb-0">$79.99</h5>
+                </div>
+                <div class="col-md-1 d-flex align-items-center">
+                  <a href="#" class="text-muted"><i class="bi bi-trash"></i></a>
+                </div>
+              </div>
+              
+              <!-- Cart Item 2 -->
+              <div class="row mb-4 border-bottom pb-4">
+                <div class="col-md-2">
+                  <img src="https://via.placeholder.com/100x100" alt="Product" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-black">Smart Watch</h5>
+                  <p class="text-muted small">Color: Silver</p>
+                </div>
+                <div class="col-md-2 d-flex align-items-center">
+                  <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                  </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center">
+                  <h5 class="mb-0">$149.99</h5>
+                </div>
+                <div class="col-md-1 d-flex align-items-center">
+                  <a href="#" class="text-muted"><i class="bi bi-trash"></i></a>
+                </div>
+              </div>
+              
+              <!-- Cart Item 3 -->
+              <div class="row">
+                <div class="col-md-2">
+                  <img src="https://via.placeholder.com/100x100" alt="Product" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                  <h5 class="text-black">Bluetooth Speaker</h5>
+                  <p class="text-muted small">Color: Blue</p>
+                </div>
+                <div class="col-md-2 d-flex align-items-center">
+                  <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-secondary" type="button">-</button>
+                    <input type="text" class="form-control text-center" value="1">
+                    <button class="btn btn-outline-secondary" type="button">+</button>
+                  </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-center">
+                  <h5 class="mb-0">$59.99</h5>
+                </div>
+                <div class="col-md-1 d-flex align-items-center">
+                  <a href="#" class="text-muted"><i class="bi bi-trash"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Continue Shopping Button -->
+          <div class="d-flex justify-content-start mb-4">
+            <a href="index.html" class="btn btn-outline-dark">
+              <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+            </a>
+          </div>
+        </div>
+        
+        <!-- Order Summary -->
+        <div class="col-lg-4">
+          <div class="card shadow-sm">
+            <div class="card-header bg-white">
+              <h5 class="mb-0">Order Summary</h5>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between mb-2">
+                <span>Subtotal</span>
+                <span>$289.97</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Shipping</span>
+                <span>$0.00</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Tax</span>
+                <span>$23.20</span>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between mb-4">
+                <strong>Total</strong>
+                <strong>$313.17</strong>
+              </div>
+              
+              <!-- Promo Code -->
+              <div class="mb-4">
+                <label for="promoCode" class="form-label">Promo Code</label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" id="promoCode" placeholder="Enter code">
+                  <button class="btn btn-outline-dark" type="button">Apply</button>
+                </div>
+              </div>
+              
+              <!-- Checkout Button -->
+              <a href="checkout.html" class="btn btn-dark w-100">Proceed to Checkout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5 class="text-white">ShopEasy</h5>
+          <p class="text-muted">Quality products at affordable prices</p>
+        </div>
+        <div class="col-lg-2 mb-4 mb-lg-0">
+          <h5 class="text-white">Shop</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">All Products</a></li>
+            <li><a href="#" class="text-muted">Featured</a></li>
+            <li><a href="#" class="text-muted">New Arrivals</a></li>
+            <li><a href="#" class="text-muted">Sale</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 mb-4 mb-lg-0">
+          <h5 class="text-white">Support</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-muted">Contact Us</a></li>
+            <li><a href="#" class="text-muted">FAQs</a></li>
+            <li><a href="#" class="text-muted">Returns</a></li>
+            <li><a href="#" class="text-muted">Shipping</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="text-white">Stay Connected</h5>
+          <p class="text-muted">Subscribe to our newsletter for updates</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Email address">
+              <button class="btn btn-outline-light" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="text-white-50">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="text-muted mb-0">&copy; 2023 ShopEasy. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <div class="text-muted">
+            <i class="bi bi-facebook me-2"></i>
+            <i class="bi bi-twitter me-2"></i>
+            <i class="bi bi-instagram me-2"></i>
+            <i class="bi bi-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

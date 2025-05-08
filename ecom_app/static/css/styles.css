@@ -1,0 +1,54 @@
+
+/* Custom styles for the e-commerce store */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Product card hover effect */
+  .card {
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+  }
+  
+  /* Button hover animations */
+  .btn {
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: #212529;
+    color: white;
+  }
+  
+  /* Progress bar styling for order tracking */
+  .progress {
+    height: 3px;
+    background-color: #e9ecef;
+  }
+  
+  /* Footer link hover effect */
+  footer a {
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #fff !important;
+    text-decoration: none;
+  }
+  
+  /* Navigation active state */
+  .navbar .nav-link.active {
+    font-weight: 600;
+  }
+  
+  /* Custom badge positioning */
+  .position-absolute.top-0.start-100.translate-middle {
+    transform: translate(-50%, -50%);
+  }
+  
